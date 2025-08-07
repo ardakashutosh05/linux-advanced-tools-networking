@@ -1,95 +1,73 @@
-# 🚀 Linux Advanced Tools & Networking Commands
+# ⚙️ Linux Advanced Tools & Networking Commands
 
-This project is a complete guide for mastering advanced Linux command-line tools and essential networking utilities. It’s perfect for DevOps engineers, system administrators, and Linux power users.
+This GitHub project is a **complete collection of advanced Linux command-line tools** and **essential networking utilities** with real-world examples.
+
+Ideal for:
+✅ DevOps Engineers  
+✅ System Administrators  
+✅ Cloud Professionals  
+✅ Students preparing for Linux interviews  
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure
+
 linux-advanced-tools-networking/
-├── README.md
-├── advanced_tools/
+│
+├── tools/ # Advanced CLI tools
 │ ├── awk_examples.sh
 │ ├── grep_examples.sh
-│ ├── find_examples.sh
 │ ├── sed_examples.sh
-│ └── cut_sort_uniq.sh
-├── networking_tools/
-│ ├── ping_traceroute.sh
-│ ├── netstat_ss.sh
-│ ├── ip_ifconfig.sh
-│ └── curl_wget.sh
-├── diagrams/
-│ ├── awk-processing-flow.png
-│ └── linux-network-tools-overview.png
+│ └── find_examples.sh
+│
+├── networking/ # Network utilities
+│ ├── ping_examples.sh
+│ ├── netstat_examples.sh
+│ ├── curl_examples.sh
+│ └── ip_examples.sh
+│
+└── README.md # Project summary
 
-
----
-
-## 🧠 What You'll Learn
-
-### 🔹 Advanced Linux Tools
-- `awk`: Text processing
-- `grep`: Pattern matching
-- `sed`: Stream editing
-- `find`: File search
-- `cut`, `sort`, `uniq`: Text parsing
-
-### 🔹 Networking Tools
-- `ping`, `traceroute`: Connectivity checks
-- `netstat`, `ss`: Socket statistics
-- `ip`, `ifconfig`: Interface details
-- `curl`, `wget`: Data transfers
+yaml
+Copy code
 
 ---
 
-## 📂 Advanced Tools Scripts
+## 🛠️ Linux Advanced Tools
 
-📁 All located in the `advanced_tools/` folder:
+| Tool  | Description |
+|-------|-------------|
+| **awk**   | Pattern scanning & text processing (ex: generate reports from logs) |
+| **grep**  | Search for patterns in files |
+| **sed**   | Stream editor (used for replace, delete, insert in files) |
+| **find**  | Locate files and directories based on filters |
 
-| Script              | Description                         |
-|---------------------|-------------------------------------|
-| `awk_examples.sh`   | Filter, format, and analyze text    |
-| `grep_examples.sh`  | Find patterns and filter output     |
-| `find_examples.sh`  | Search files using conditions       |
-| `sed_examples.sh`   | Modify file contents on-the-fly     |
-| `cut_sort_uniq.sh`  | Handle structured data (CSV, logs)  |
-
-📷 Diagram:
-![AWK Processing](diagrams/awk-processing-flow.png)
+👉 Scripts available in `tools/` folder with comments and usage examples.
 
 ---
 
-## 🌐 Networking Tools Scripts
+## 🌐 Linux Networking Commands
 
-📁 All located in the `networking_tools/` folder:
+| Command     | Use Case |
+|-------------|----------|
+| **ping**    | Check network connectivity to remote host |
+| **netstat** | View network connections, routing tables, ports |
+| **curl**    | Transfer data from or to a server using HTTP, HTTPS, FTP |
+| **ip**      | Manage IP addresses and network interfaces |
 
-| Script                | Description                          |
-|------------------------|--------------------------------------|
-| `ping_traceroute.sh`   | Test host connectivity               |
-| `netstat_ss.sh`        | View open ports and connections      |
-| `ip_ifconfig.sh`       | Inspect and manage interfaces        |
-| `curl_wget.sh`         | Transfer files via HTTP, FTP         |
-
-📷 Diagram:
-![Linux Networking Tools Overview](diagrams/linux-network-tools-overview.png)
+📁 All scripts with real examples are available in the `networking/` folder.
 
 ---
 
-## 🧪 How to Use
+## ▶️ How to Use
 
 ```bash
-# Navigate to a category
-cd advanced_tools/
-# or
-cd networking_tools/
+# Make scripts executable
+chmod +x tools/*.sh
+chmod +x networking/*.sh
 
-# Make the script executable
-chmod +x awk_examples.sh
-
-# Run it
-./awk_examples.sh
-
-
----
+# Run any script
+./tools/awk_examples.sh
+./networking/ping_examples.sh
 
 

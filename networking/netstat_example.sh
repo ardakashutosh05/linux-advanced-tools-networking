@@ -1,20 +1,20 @@
 #!/bin/bash
 
-# 📊 Netstat Example Script
+# 🖧 Netstat Example Script
 
-# Show all active connections
-echo "🔎 Active Connections:"
-netstat -tunapl
-
-echo
-
-# Show listening ports
-echo "🎧 Listening Ports:"
+# 1. Show all active internet connections and listening ports
+echo "🔎 Active internet connections and listening ports:"
 netstat -tuln
 
 echo
 
-# Show routing table
-echo "🧭 Routing Table:"
-netstat -rn
+# 2. Show all established TCP connections
+echo "🔎 Established TCP connections:"
+netstat -at
+
+echo
+
+# 3. Show routing table
+echo "📍 Routing table:"
+netstat -r
 
